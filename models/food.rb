@@ -1,6 +1,7 @@
 class Food < ActiveRecord::Base
 
-  belongs_to(:orders)
+  has_many(:orders)
+  has_many(:parties through :orders)
 
   def initialize
     @name = name
