@@ -1,7 +1,7 @@
 class Food < ActiveRecord::Base
 
-  has_many(:orders)
-  has_many(:parties through :orders)
+  belongs_to(:orders)
+  has_many(:parties, :through => :orders)
 
   def initialize
     @name = name
@@ -12,8 +12,16 @@ class Food < ActiveRecord::Base
     @name
   end
 
+  def name=(new_name)
+    @name = new_name
+  end
+
   def price
     @price
+  end
+  
+  def price=(new_price)
+    @price = new_price
   end
 
 end
