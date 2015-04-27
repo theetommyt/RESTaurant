@@ -15,7 +15,7 @@ require './models/party'
 
 
 get '/' do
-  console.log("POS SYSTEM ONLINE")
+  erb :index
 end
 
 get 'api/foods' do
