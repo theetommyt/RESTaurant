@@ -1,9 +1,22 @@
 class OrdersController < Sinatra::Base
   enable  :sessions
-  helpers Sinatra::SessionHelper
+
+  # ***** Helpers *****
+  def order_params
+    return params[:order] if params[:order]
+    body_data = {}
+    @request_body ||= request.body.read.to_s
+    body_data = (JSON(@request_body)) unless @request_body.empty?
+    body_data = body_data['order'] || body_data
+  end
+
+  # ***** Debugging *****
+  get '/pry' do
+    binding.pry
+  end
 
 
-  ## Order Routes
+  # ***** Routes: /api/orders *****
   get '/' do
     orders = Order.all
     content_type :json
@@ -17,7 +30,7 @@ class OrdersController < Sinatra::Base
   end
 
   post '/' do
-    food = Food.create(order_params)
+    order = Order.create(order_params)
     content_type :json
     order.to_json
   end
@@ -30,7 +43,7 @@ class OrdersController < Sinatra::Base
   end
 
   put '/:id' do
-    order = Orders.find(params[:id])
+    order = Order.find(params[:id])
     order.update(order_params)
     content_type :json
     order.to_json
@@ -39,7 +52,7 @@ class OrdersController < Sinatra::Base
   delete '/:id' do
      Order.destroy(params[:id])
      content_type :json
-     {success: "Order deleted"}.to_json
+     {success: "Order Deleted"}.to_json
   end
 
 end
