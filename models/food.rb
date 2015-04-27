@@ -3,11 +3,6 @@ class Food < ActiveRecord::Base
   belongs_to(:orders)
   has_many(:parties, :through => :orders)
 
-  def initialize
-    @name = name
-    @price = price
-  end
-
   def name
     @name
   end
@@ -19,7 +14,7 @@ class Food < ActiveRecord::Base
   def price
     @price
   end
-  
+
   def price=(new_price)
     @price = new_price
   end

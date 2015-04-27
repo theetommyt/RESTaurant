@@ -54,5 +54,4 @@ class OrdersController < Sinatra::Base
      content_type :json
      {success: "Order Deleted"}.to_json
   end
-
 end

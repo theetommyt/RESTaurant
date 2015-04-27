@@ -1,3 +1,6 @@
+class FoodsController < Sinatra::Base
+  enable  :sessions
+
 # ***** Helpers *****
  def food_params
    return params[:food] if params[:food]
@@ -55,5 +58,4 @@
     content_type :json
     {success: "Food item deleted"}.to_json
  end
-
 end

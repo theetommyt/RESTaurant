@@ -55,5 +55,4 @@ class PartiesController < Sinatra::Base
      {success: "Party deleted"}.to_json
   end
 
-
 end
