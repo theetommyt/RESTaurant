@@ -1,5 +1,6 @@
 class FoodsController < Sinatra::Base
   enable  :sessions
+  helpers Sinatra::SessionHelper
 
 # ***** Helpers *****
  def food_params
