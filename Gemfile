@@ -7,3 +7,5 @@ gem 'pg'
 gem 'sinatra-controllers'
 gem 'bcrypt'
 gem 'rake'
+
+gem 'pry'

@@ -52,6 +52,7 @@ class OrdersController < Sinatra::Base
   delete '/:id' do
      Order.destroy(params[:id])
      content_type :json
-     {success: "Order Deleted"}.to_json
+     {success: "ok"}.to_json
   end
+
 end

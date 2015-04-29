@@ -91,7 +91,7 @@ li {
 }
 
 #log_in {
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.8);
   width: 40%;
   padding: 15px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.26);
@@ -108,5 +108,14 @@ input {
   font-family: 'Gudea', sans;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   border: 0px;
+
+}
+
+#new_food_h2 {
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+  font-family: 'Gudea', sans;
+  color: rgba(0,51,0,0.6);
 
 }

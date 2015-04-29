@@ -52,7 +52,8 @@ class PartiesController < Sinatra::Base
   delete '/:id' do
      Party.destroy(params[:id])
      content_type :json
-     {success: "Party deleted"}.to_json
+     {success: "ok"}.to_json
   end
+
 
 end

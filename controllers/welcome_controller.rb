@@ -11,12 +11,17 @@ class WelcomeController < Sinatra::Base
     binding.pry
   end
 
+  post '/pry' do
+    binding.pry
+  end
+
   # ***** ROUTES *****
   get '/' do
     erb :index
   end
 
   get '/admin' do
+    binding.pry
     if current_user
       erb :admin_authenticated
     else

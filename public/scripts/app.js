@@ -11,9 +11,9 @@ $(document).ready(function(){
     model: app.PartyModel
   })
 
-  app.orders = new app.OrderCollection({
-    model: app.OrderModel
-  })
+  // app.orders = new app.OrderCollection({
+  //   model: app.OrderModel
+  // })
 
   app.foodListPainter = new app.GeneralListView({
     modelView: app.FoodView,

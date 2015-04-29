@@ -3,30 +3,49 @@
     <title>Reign Sign In</title>
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link href='http://fonts.googleapis.com/css?family=Gudea|Unica+One' rel='stylesheet' type='text/css'>
+    <script src='/scripts/adminApp.js'></script>
   </head>
   <body>
+    <header>
+      <p id="headline"><strong>Reign Manager Options</strong></p>
+    </header>
+      <div id = "log_in">
 
-    <h2>Cheers Manager!</h2>
+        <h2 id="new_food_h2"><strong>Add a New Food Item</strong></h2>
 
-    <form action="/sessions" method='post'>
-      <input type="hidden" name='_method' value='delete'>
-      <input type="submit" value='log-out'>
-    </form>
+        <form action="/sessions" method='post' id="new_food">
+          <input type="text" name="name" placeholder='--food name--'>
+          <br>
+          <input type="text" name="cost" placeholder='--food price--'>
+          <br>
+          <input type="text" name="cuisine" placeholder='--food category--'>
+          <br>
+          <input type="hidden" name='_method' value='delete'>
+          <input type="submit" value='submit'>
+        </form>
+      </div>
+
+      <footer>
+        <ul>
+          <li>Help</li>
+          <li><a href="/">POS Main</a></li>
+        </ul>
+      </footer>
 
 
     <!-- ****** JS Libraries ****** -->
-    <script src='/javascripts/lib/jquery.js'></script>
-    <script src='/javascripts/lib/underscore.js'></script>
-    <script src='/javascripts/lib/backbone.js'></script>
+    <script src='/scripts/lib/jquery.js'></script>
+    <script src='/scripts/lib/underscore.js'></script>
+    <script src='/scripts/lib/backbone.js'></script>
 
     <!-- ****** Backbone Models ****** -->
-    <script src='/javascripts/models/FoodModel.js'></script>
+    <script src='/scripts/models/FoodModel.js'></script>
 
     <!-- ****** Backbone Collection ****** -->
-    <script src='/javascripts/collections/FoodCollection.js'></script>
+    <script src='/scripts/collections/FoodCollection.js'></script>
 
     <!-- ****** Application ****** -->
-    <script src='/javascripts/adminApp.js'></script>
+    <script src='/scripts/adminApp.js'></script>
 
   </body>
 </html>
