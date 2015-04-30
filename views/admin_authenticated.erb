@@ -8,7 +8,7 @@
     <header>
       <p id="headline"><strong>Reign Manager Options</strong></p>
     </header>
-      <div id = "log_in" class= "hidden">
+      <div id = "log_in">
 
         <h2 id="new_food_h2"><strong>Add a New Food Item</strong></h2>
 
@@ -40,12 +40,17 @@
     <!-- ****** Backbone Models ****** -->
     <script src='/scripts/models/FoodModel.js'></script>
 
-    <!-- ****** Backbone Collection ****** -->
+    <!-- ****** Backbone Collection ******-->
     <script src='/scripts/collections/FoodCollection.js'></script>
 
-    <!-- ****** Application ****** -->
+    <!-- ****** Application ******
     <script src='/scripts/adminApp.js'></script>
-    <script src='/scripts/app.js'></script>
+    <script src='/scripts/app.js'></script> -->
+    <script>
+      $(document).ready(function(){
+        $('#log_in').fadeIn(2000);
+      });
+    </script>
 
 
   </body>

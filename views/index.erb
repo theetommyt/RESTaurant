@@ -7,12 +7,9 @@
     <link href='http://fonts.googleapis.com/css?family=Gudea|Unica+One' rel='stylesheet' type='text/css'>
 
   </head>
+
   <body>
-  <script>
-  $(document).ready(function(){
-    $('#food_div').slideDown(1000);
-  });
-  </script>
+
 
 
     <header>
@@ -25,7 +22,7 @@
           </div>
 
 
-        <div class="register">
+        <div class="register" style="overflow:auto;">
           <h1>Orders<h1>
 
             <div id="orders_font">
@@ -61,5 +58,11 @@
         <script src='/scripts/views/GeneralListView.js'></script>
 
         <script src='/scripts/app.js'></script>
+        <script>
+          $(document).ready(function(){
+            $('#food_div').fadeIn(2000);
+            $('.register').slideDown(2000);
+          });
+        </script>
   </body>
 </html>
