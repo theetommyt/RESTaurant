@@ -113,6 +113,11 @@ h1 {
   font-size: 15px;
   color: white;
 
+.party{
+  font-family: 'Gudea', sans;
+  font-size: 12px;
+}
+
 }
 .register {
   background-color: rgba(255,255,255,0.7);
@@ -183,4 +188,16 @@ input {
   font-family: 'Gudea', sans;
   color: rgba(0,51,0,0.6);
 
+}
+
+#food_submit{
+  background: transparent none;
+  background-color: rgba(25,51,0,0.6);
+  color: white;
+}
+
+#login_submit{
+  background: transparent none;
+  background-color: rgba(25,51,0,0.6);
+  color: white;
 }
