@@ -1,6 +1,8 @@
 body {
   background: url('http://www.travelphotoadventures.com/wp-content/uploads/2013/04/Seattle-Skyline-by-Michael-Matti.jpg');
   background-size: cover;
+  font-family: 'Gudea', sans;
+  font-size: 15px;
 }
 
 a:link {
@@ -53,7 +55,14 @@ button {
   box-shadow: 0 4px 4px 0 rgba(200,200,120, 0.5);
   font-family: 'Gudea', sans;
   font-size: 12px;
+}
 
+#view_wrapper{
+  width: 60%;
+  margin: 0 0 0 0;
+  padding: 0px;
+  position: relative;
+  float: left;
 }
 
 #food_div{
@@ -61,8 +70,7 @@ button {
   font-size: 12px;
   float: left;
   position: relative;
-  width: 30%;
-  z-index: 4;
+  width: 45%;
 }
 
 #party-div{
@@ -70,8 +78,10 @@ button {
   font-size: 12px;
   float: left;
   position: relative;
-  width: 15%;
-  z-index: 4;
+  width: 45%;
+  font-family: 'Gudea', sans;
+  font-size: 15px;
+  color: white;
 
 }
 .register {

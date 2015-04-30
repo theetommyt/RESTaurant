@@ -55,5 +55,20 @@ class PartiesController < Sinatra::Base
      {success: "ok"}.to_json
   end
 
+  get '/:id/receipt' do
+    party = Party.find(params[:id].to_i)
+
+    total=0
+    party.foods.each {|food| total += food.cost}
+
+    table_number = party.table_number.to_s
+    id = party.id.to_s
+    text= "Table Number: #{table_number} \nTotal: #{total} \nMake it Reign!"
+    file = './public/receipts/' + id + ".txt"
+    File.write(file, text)
+    content_type :json
+    party.to_json
+  end
+
 
 end

@@ -28,21 +28,23 @@ $(document).ready(function(){
   app.foods.fetch();
 
 
-  // This is just ONE way to do this....  there are many others....
-  $('#place-order').on('click', function(){  // Creating an event listener
+  $('#place-order').on('click', function(){
 
-    var partyId = app.partySelection.get('id');  // Obtain the id from the selected party
-    var foodId = app.foodSelection.get('id');   // Obtain the id from the selected food
+    var partyId = app.partySelection.get('id');
+    var foodId = app.foodSelection.get('id');
 
-    $.ajax({     // make an ajax call
-      method: 'post',  // to make a new order
-      url: '/api/orders',  //  the route to hit
-      data: {order: {party_id: partyId, food_id: foodId} },  // data to make order
-      success: function(){
-        app.parties.fetch( {reset: true} ); // Reset the party list... update all data
+    $.ajax({
+      method: 'post',
+      url: '/api/orders',
+      data: {order: {party_id: partyId, food_id: foodId} },
+      success: function(options){
+        app.parties.fetch( {reset: true} );
 
-        $('.food-selected').removeClass('food-selected');  // remove selected class for style
-        $('.party-selected').removeClass('party-selected');  // remove selected class for style
+        $('.food-selected').removeClass('food-selected');
+        $('.party-selected').removeClass('party-selected');
+
+        // show the full order
+
       }
     });
 
