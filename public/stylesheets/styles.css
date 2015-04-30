@@ -40,11 +40,11 @@ h1 {
   margin-bottom: 10px;
 }
 
-h2{
+#orders_font{
   font-family: 'Gudea', sans;
   font-size: 20px;
-}
 
+}
 
 #food_button {
   color: rgb(0,100,0);
