@@ -35,6 +35,7 @@ class FoodsController < Sinatra::Base
     food = Food.create(food_params)
     content_type :json
     food.to_json
+
   end
 
   patch '/:id' do

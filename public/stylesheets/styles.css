@@ -138,7 +138,7 @@ footer {
   background-color: rgba(255,255,255,0.65);
   width: 99%;
   height: 50px;
-  position:absolute;
+  position: absolute;
   bottom:10;
   z-index: 2;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.26);
