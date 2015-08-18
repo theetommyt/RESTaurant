@@ -87,4 +87,3 @@ CSS Styling
 ![MainPOS](/public/images/managerLogIn.png)
 #### Create a New Food Item
 ![MainPOS](/public/images/foodCreate.png)
-![Screen Shot](/pos_screenshot.png)
