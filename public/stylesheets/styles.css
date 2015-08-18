@@ -1,14 +1,27 @@
 body {
-  background: url('http://www.travelphotoadventures.com/wp-content/uploads/2013/04/Seattle-Skyline-by-Michael-Matti.jpg');
+  background: url('/images/reignSeattle.jpg');
   background-size: cover;
   font-family: 'Gudea', sans;
   font-size: 15px;
 }
 
+/*
+Global Link Styles
+*/
+
 a:link {
   text-decoration: none;
-  color: rgba(255,255,204,0.6);
+  color: rgba(25,51,0,0.6);
 }
+
+a:visited {
+  text-decoration: none;
+  color: rgba(25,51,0,0.6);
+}
+
+/*
+Header Styles
+*/
 
 header {
   background-color: rgba(255,255,255,0.65);
@@ -28,7 +41,63 @@ header {
   font-weight: 200;
   margin-left: 30px;
   margin-top: 0px;
+}
 
+/*
+Food & Menu Styles
+*/
+
+#food_div{
+  display: none;
+  font-family: 'Gudea', sans;
+  font-size: 12px;
+  float: left;
+  position: relative;
+  width: 60%;
+  z-index: 2;
+}
+
+#food_button {
+  color: rgb(0,100,0);
+  width: 24%;
+  height: 12%;
+  background: transparent none;
+  background-color: rgba(255,255,255,0.8);
+  display: block;
+  float: left;
+  position: relative;
+  border: 0 none;
+  margin: 30 0 30 30;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.26);
+  font-family: 'Gudea', sans;
+  font-size: 2.5vh;
+}
+
+li {
+  display: inline;
+  color: rgba(0,51,0,0.6);
+  line-height: 22px;
+  font-family: 'Unica One', cursive;
+  font-size: 25px;
+  padding: 15 0 0 0;
+  margin: 0px 30px 0px 5px;
+}
+
+/*
+Register & Tables/Parties Styles
+*/
+
+#register {
+  display: none;
+  background-color: rgba(255,255,255,0.8);
+  width: 35%;
+  height: 93%;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  float: right;
+  margin: -50 25 -20 0;
+  z-index: 4;
+  overflow: auto;
 }
 
 h1 {
@@ -40,26 +109,15 @@ h1 {
   margin-bottom: 10px;
 }
 
-#orders_font{
+#party_div{
   font-family: 'Gudea', sans;
-  font-size: 20px;
-
-}
-
-#food_button {
-  color: rgb(0,100,0);
-  width: 150px;
-  height: 75px;
-  background: transparent none;
-  background-color: rgba(255,255,255,0.8);
-  display: block;
+  font-size: 12px;
   float: left;
   position: relative;
-  border: 0 none;
-  margin: 30 0 30 30;
-  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.26);
+  width: 95%;
   font-family: 'Gudea', sans;
-  font-size: 20px;
+  font-size: 15px;
+  color: white;
 }
 
 #party_button{
@@ -95,113 +153,22 @@ h1 {
   bottom: -28;
 }
 
-#food_div{
-  display: none;
-  font-family: 'Gudea', sans;
-  font-size: 12px;
-  float: left;
-  position: relative;
-  width: 45%;
-}
-
-#party-div{
-  font-family: 'Gudea', sans;
-  font-size: 12px;
-  float: left;
-  position: relative;
-  width: 45%;
-  font-family: 'Gudea', sans;
-  font-size: 15px;
-  color: white;
-
-.party{
+.party {
   font-family: 'Gudea', sans;
   font-size: 12px;
 }
 
-}
-.register {
-  display: none;
-  background-color: rgba(255,255,255,0.8);
-  width: 35%;
-  height: 93%;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.4);
-  position: relative;
-  float: right;
-  margin: -50 25 -20 0;
-  z-index: 4;
-
-}
-
+/*
+Footer Styles
+*/
 
 footer {
+  clear: both;
   background-color: rgba(255,255,255,0.65);
   width: 99%;
   height: 50px;
-  position: absolute;
+  position: fixed;
   bottom:10;
   z-index: 2;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.26);
-}
-
-li {
-  display: inline;
-  color: rgba(0,51,0,0.6);
-  line-height: 22px;
-  font-family: 'Unica One', cursive;
-  font-size: 25px;
-  padding: 15 0 0 0;
-  margin: 0px 30px 0px 5px;
-}
-
-#log_in {
-  display: none;
-  background-color: rgba(255,255,255,0.8);
-  width: 40%;
-  padding: 15px;
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.26);
-  position: absolute;
-  top: 30%;
-  left: 30%;
-}
-
-input {
-  display: block;
-  width: 85%;
-  margin: 0 auto;
-  font-size: 30px;
-  font-family: 'Gudea', sans;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  border: 0px;
-
-}
-
-#new_food_h2 {
-  text-align: center;
-  margin: 10px;
-  font-size: 30px;
-  font-family: 'Gudea', sans;
-  color: rgba(0,51,0,0.6);
-
-}
-
-#new_food_h2.visited {
-  text-align: center;
-  margin: 10px;
-  font-size: 30px;
-  font-family: 'Gudea', sans;
-  color: rgba(0,51,0,0.6);
-
-}
-
-#food_submit{
-  background: transparent none;
-  background-color: rgba(25,51,0,0.6);
-  color: white;
-}
-
-#login_submit{
-  background: transparent none;
-  background-color: rgba(25,51,0,0.6);
-  color: white;
 }

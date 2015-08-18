@@ -2,8 +2,7 @@
   <head>
     <title>Reign</title>
     <link rel="stylesheet" href="/stylesheets/styles.css">
-
-
+    <link rel="stylesheet" href="/stylesheets/admin.css">
     <link href='http://fonts.googleapis.com/css?family=Gudea|Unica+One' rel='stylesheet' type='text/css'>
 
   </head>
@@ -15,22 +14,20 @@
     <header>
       <p id="headline"><strong>Reign</strong></p>
     </header>
+
+      <div id="food_container">
           <div id='food_div'>
-
-
-
           </div>
+      </div>
 
 
-        <div class="register" style="overflow:auto;">
+        <div id="register">
           <h1>Orders<h1>
 
-            <div id="orders_font">
               <div id='party_div'>
 
 
               </div>
-            </div>
             <button type="submit" id="place-order">Submit Order</button>
 
 
@@ -58,15 +55,5 @@
         <script src='/scripts/views/GeneralListView.js'></script>
 
         <script src='/scripts/app.js'></script>
-        <script>
-          $(document).ready(function(){
-              $('#food_div').fadeIn(1000);
-              $('.register').slideDown(1000);
-              // // $( '#party_button' ).click(function() {
-              //   $( '#order_box' ).slideToggle( 'slow' );
-              // });
-            });
-
-        </script>
   </body>
 </html>

@@ -50,5 +50,7 @@ $(document).ready(function(){
 
   });
 
+  $('#food_div').fadeIn(1000);
+  $('#register').slideDown(1000);
 
 });
