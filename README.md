@@ -81,5 +81,10 @@ CSS Styling
 ```
 
 ## Screenshots
-### POS Main Display
+#### POS Main Display
+![MainPOS](/images/mainPOS.png)
+#### Administrator Log In
+![MainPOS](/images/managerLogIn.png)
+#### Create a New Food Item
+![MainPOS](/images/foodCreate.png)
 ![Screen Shot](/pos_screenshot.png)
