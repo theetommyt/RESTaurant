@@ -47,6 +47,7 @@ header {
 Food & Menu Styles
 */
 
+
 #food_div{
   display: none;
   font-family: 'Gudea', sans;
@@ -57,23 +58,22 @@ Food & Menu Styles
   z-index: 2;
 }
 
-#food_button {
+.select-food {
   color: rgb(0,100,0);
   width: 24%;
   height: 12%;
   background: transparent none;
-  background-color: rgba(255,255,255,0.8);
-  display: block;
+  background-color: rgba(255,255,255,0.85);
   float: left;
   position: relative;
-  border: 0 none;
+  border: none;
   margin: 30 0 30 30;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.26);
   font-family: 'Gudea', sans;
   font-size: 2.5vh;
 }
 
-li {
+.food {
   display: inline;
   color: rgba(0,51,0,0.6);
   line-height: 22px;
@@ -91,11 +91,11 @@ Register & Tables/Parties Styles
   display: none;
   background-color: rgba(255,255,255,0.8);
   width: 35%;
-  height: 93%;
+  height: 95%;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.4);
   position: relative;
   float: right;
-  margin: -50 25 -20 0;
+  margin: -50 25 -30 0;
   z-index: 4;
   overflow: auto;
 }
@@ -128,12 +128,20 @@ h1 {
   position: relative;
   background: transparent none;
   background-color: rgba(51,102,0,0.4);
-  border: 5px;
-  border-color: rgba(0,51,0,0.6);
-  margin: 0 0 30 30;
+  border: none;
+  margin: 0 0 15 30;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.26);
-  font-family: 'Gudea', sans;
+  font-family: 'Unica One', sans;
   font-size: 20px;
+}
+
+.food_order {
+  display: inline-block;
+  color: rgba(0,51,0,0.6);
+  font-family: 'Gudea', cursive;
+  font-size: 20px;
+  padding: 3 0 0 0;
+  margin: 0px 15px 0px 15px;
 }
 
 #place-order{
@@ -156,6 +164,7 @@ h1 {
 .party {
   font-family: 'Gudea', sans;
   font-size: 12px;
+  list-style: none;
 }
 
 /*
@@ -165,10 +174,20 @@ Footer Styles
 footer {
   clear: both;
   background-color: rgba(255,255,255,0.65);
-  width: 99%;
+  width: 100%;
   height: 50px;
-  position: fixed;
-  bottom:10;
-  z-index: 2;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.footer_menu{
+  display: inline;
+  color: rgba(0,51,0,0.6);
+  line-height: 50px;
+  font-family: 'Unica One', cursive;
+  font-size: 25px;
+  padding: 15 0 0 0;
+  margin: 0px 30px 0px 5px;
 }
